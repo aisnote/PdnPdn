@@ -387,6 +387,8 @@ namespace PaintDotNet
         {
             base.OnShown(e);
 
+            SystemLayer.UI.SetFormOpacity(this, 0.5);
+
             if (PdnInfo.IsExpired)
             {
                 foreach (Form form in Application.OpenForms)
