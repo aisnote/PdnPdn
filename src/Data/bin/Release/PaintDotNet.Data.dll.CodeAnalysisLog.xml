@@ -1,0 +1,926 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 9.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="1.36">
+ <Targets>
+  <Target Name="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data\bin\Release\PaintDotNet.Data.dll">
+   <Modules>
+    <Module Name="paintdotnet.data.dll">
+     <Namespaces>
+      <Namespace Name="PaintDotNet">
+       <Types>
+        <Type Name="BmpFileType+BmpBitDepthUIChoices" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If the name 'BmpFileType.BmpBitDepthUIChoices' is plural, change it to its singular form.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Bpp24" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Bpp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Bpp' in member name 'BmpFileType.BmpBitDepthUIChoices.Bpp24' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Bpp8" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Bpp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Bpp' in member name 'BmpFileType.BmpBitDepthUIChoices.Bpp8' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="BmpFileType+PropertyNames" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If the name 'BmpFileType.PropertyNames' is plural, change it to its singular form.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Document" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClearMetaData()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="MetaData" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="932">The compound word 'MetaData' in member name 'Document.ClearMetaData()' exists as a discrete term. If your usage is intended to be single word, case it as 'Metadata' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ConvertMeasurement(System.Double,PaintDotNet.MeasurementUnit,PaintDotNet.MeasurementUnit,System.Double,PaintDotNet.MeasurementUnit)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dpu" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="602">In method 'Document.ConvertMeasurement(double, MeasurementUnit, MeasurementUnit, double, MeasurementUnit)', correct the spelling of 'Dpu' in parameter name 'basisDpu' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="602">In method 'Document.ConvertMeasurement(double, MeasurementUnit, MeasurementUnit, double, MeasurementUnit)', correct the spelling of 'Dpu' in parameter name 'basisDpuUnits' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="602">In method 'Document.ConvertMeasurement(double, MeasurementUnit, MeasurementUnit, double, MeasurementUnit)', correct the spelling of 'Dpu' in parameter name 'resultDpuUnits' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CoordinatesToStrings(PaintDotNet.MeasurementUnit,System.Int32,System.Int32,System.String&amp;,System.String&amp;,System.String&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="x" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="751">In method 'Document.CoordinatesToStrings(MeasurementUnit, int, int, out string, out string, out string)', correct the spelling of 'x' in parameter name 'xString' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="751">In method 'Document.CoordinatesToStrings(MeasurementUnit, int, int, out string, out string, out string)', consider providing a more meaningful name than parameter name 'x'.</Issue>
+            </Message>
+            <Message Id="y" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="751">In method 'Document.CoordinatesToStrings(MeasurementUnit, int, int, out string, out string, out string)', correct the spelling of 'y' in parameter name 'yString' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="MemberParameterMoreMeaningfulName" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="751">In method 'Document.CoordinatesToStrings(MeasurementUnit, int, int, out string, out string, out string)', consider providing a more meaningful name than parameter name 'y'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DefaultDpcm" Kind="Property" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dpcm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="219">Correct the spelling of 'Dpcm' in member name 'Document.DefaultDpcm' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DefaultDpuUnit" Kind="Property" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dpu" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="190">Correct the spelling of 'Dpu' in member name 'Document.DefaultDpuUnit' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DotsPerCmToDotsPerInch(System.Double)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="dpcm" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="243">In method 'Document.DotsPerCmToDotsPerInch(double)', correct the spelling of 'dpcm' in parameter name 'dpcm' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DpuUnit" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dpu" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="136">Correct the spelling of 'Dpu' in member name 'Document.DpuUnit' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#DpuX" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dpu" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="316">Correct the spelling of 'Dpu' in member name 'Document.DpuX' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_DpuX()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="335">'Document.DpuX.get()' creates an exception of type 'DivideByZeroException', an exception type that should not be raised in a property. If this exception instance might be raised, use a different exception type, convert this property into a method, or change this property's logic so that it no longer raises an exception.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#DpuY" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dpu" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="385">Correct the spelling of 'Dpu' in member name 'Document.DpuY' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+           <Accessors>
+            <Accessor Name="#get_DpuY()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+             <Messages>
+              <Message TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+               <Issue Name="PropertyGetter" Certainty="90" Level="Warning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="405">'Document.DpuY.get()' creates an exception of type 'DivideByZeroException', an exception type that should not be raised in a property. If this exception instance might be raised, use a different exception type, convert this property into a method, or change this property's logic so that it no longer raises an exception.</Issue>
+              </Message>
+             </Messages>
+            </Accessor>
+           </Accessors>
+          </Member>
+          <Member Name="#GetDefaultDpu(PaintDotNet.MeasurementUnit)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dpu" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="250">Correct the spelling of 'Dpu' in member name 'Document.GetDefaultDpu(MeasurementUnit)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Invalidate(PaintDotNet.PdnRegion)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="1306">In method 'Document.Invalidate(PdnRegion)', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Invalidate(System.Drawing.Rectangle)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="1349">In method 'Document.Invalidate(Rectangle)', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Invalidate(System.Drawing.Rectangle[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="1336">In method 'Document.Invalidate(Rectangle[])', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Invalidate(System.Drawing.RectangleF)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="1331">In method 'Document.Invalidate(RectangleF)', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Invalidate(System.Drawing.RectangleF[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="1323">In method 'Document.Invalidate(RectangleF[])', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MaximumDpu" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dpu" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dpu' in member name 'Document.MaximumDpu' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#MinimumDpu" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Dpu" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Dpu' in member name 'Document.MinimumDpu' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PixelToPhysical(System.Double,PaintDotNet.MeasurementUnit,PaintDotNet.MeasurementUnit,System.Double)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="dpu" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="484">In method 'Document.PixelToPhysical(double, MeasurementUnit, MeasurementUnit, double)', correct the spelling of 'dpu' in parameter name 'dpu' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="484">In method 'Document.PixelToPhysical(double, MeasurementUnit, MeasurementUnit, double)', correct the spelling of 'dpu' in parameter name 'dpuUnit' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Render(PaintDotNet.RenderArgs,System.Drawing.Rectangle)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="988">In method 'Document.Render(RenderArgs, Rectangle)', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Render(PaintDotNet.RenderArgs,System.Drawing.Rectangle,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="1007">In method 'Document.Render(RenderArgs, Rectangle, bool)', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Render(PaintDotNet.RenderArgs,System.Drawing.Rectangle[],System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="1046">In method 'Document.Render(RenderArgs, Rectangle[], bool)', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Render(PaintDotNet.RenderArgs,System.Drawing.Rectangle[],System.Int32,System.Int32,System.Boolean)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="1053">In method 'Document.Render(RenderArgs, Rectangle[], int, int, bool)', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReplaceMetaDataFrom(PaintDotNet.Document)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="MetaData" TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberShouldBeDiscreteTerm" Certainty="80" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Document.cs" Line="927">The compound word 'MetaData' in member name 'Document.ReplaceMetaDataFrom(Document)' exists as a discrete term. If your usage is intended to be single word, case it as 'Metadata' or strip the first token entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DocumentView" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#RecenterView(System.Drawing.PointF)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Recenter" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="DocumentView.cs" Line="1781">Correct the spelling of 'Recenter' in member name 'DocumentView.RecenterView(PointF)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RendererList" Kind="Property" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Renderer" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="DocumentView.cs" Line="60">Correct the spelling of 'Renderer' in member name 'DocumentView.RendererList' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Exif" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Exif" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Exif' in type name 'Exif'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ExifTagID" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Exif" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Exif' in type name 'ExifTagID'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#PrimaryChromaticities" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Chromaticities" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Chromaticities' in member name 'ExifTagID.PrimaryChromaticities' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#YCbCrCoefficients" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Cb" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Cb' in member name 'ExifTagID.YCbCrCoefficients' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#YCbCrPositioning" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Cb" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Cb' in member name 'ExifTagID.YCbCrPositioning' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#YCbCrSubSampling" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Cb" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Cb' in member name 'ExifTagID.YCbCrSubSampling' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ExifTagType" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Exif" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Exif' in type name 'ExifTagType'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="FileType" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#SupportsExtension(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Compare(System.String,System.String,System.StringComparison)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="NonBreaking">
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="FileType.cs" Line="179">'FileType.SupportsExtension(string)' passes StringComparison.InvariantCultureIgnoreCase as an argument to 'string.Compare(string, string, StringComparison)'. Replace this usage with StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FileType+OnSaveNotImplementedException" Kind="Class" Accessibility="Private" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="ExceptionsShouldBePublic" Category="Microsoft.Design" CheckId="CA1064" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="NonBreaking">
+           <Issue Certainty="95" Level="Warning">Make exception class 'FileType.OnSaveNotImplementedException' public.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="GdiPlusFileType" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Gdi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Gdi' in type name 'GdiPlusFileType'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#LoadProperties(System.Drawing.Image,PaintDotNet.Document)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="src" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="GdiPlusFileType.cs" Line="60">In method 'GdiPlusFileType.LoadProperties(Image, Document)', correct the spelling of 'src' in parameter name 'srcDoc' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="GifFileType+PropertyNames" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If the name 'GifFileType.PropertyNames' is plural, change it to its singular form.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="InternalFileType" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateAliased24BppBitmap(PaintDotNet.Surface)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Bpp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="InternalFileType.cs" Line="174">Correct the spelling of 'Bpp' in member name 'InternalFileType.CreateAliased24BppBitmap(Surface)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SquishSurfaceTo24Bpp(PaintDotNet.Surface)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Bpp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="InternalFileType.cs" Line="40">Correct the spelling of 'Bpp' in member name 'InternalFileType.SquishSurfaceTo24Bpp(Surface)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="JpegFileType+PropertyNames" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If the name 'JpegFileType.PropertyNames' is plural, change it to its singular form.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Layer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Invalidate(PaintDotNet.PdnRegion)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Layer.cs" Line="566">In method 'Layer.Invalidate(PdnRegion)', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Invalidate(System.Drawing.Rectangle)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Layer.cs" Line="590">In method 'Layer.Invalidate(Rectangle)', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Invalidate(System.Drawing.RectangleF[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Layer.cs" Line="578">In method 'Layer.Invalidate(RectangleF[])', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Render(PaintDotNet.RenderArgs,PaintDotNet.PdnRegion)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Layer.cs" Line="504">In method 'Layer.Render(RenderArgs, PdnRegion)', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Render(PaintDotNet.RenderArgs,System.Drawing.Rectangle)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Layer.cs" Line="483">In method 'Layer.Render(RenderArgs, Rectangle)', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RenderImpl(PaintDotNet.RenderArgs,System.Drawing.Rectangle)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Impl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Impl' in member name 'Layer.RenderImpl(RenderArgs, Rectangle)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning">In method 'Layer.RenderImpl(RenderArgs, Rectangle)', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RenderImpl(PaintDotNet.RenderArgs,System.Drawing.Rectangle[])" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Impl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Layer.cs" Line="529">Correct the spelling of 'Impl' in member name 'Layer.RenderImpl(RenderArgs, Rectangle[])' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Layer.cs" Line="529">In method 'Layer.RenderImpl(RenderArgs, Rectangle[])', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RenderImpl(PaintDotNet.RenderArgs,System.Drawing.Rectangle[],System.Int32,System.Int32)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Impl" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Layer.cs" Line="534">Correct the spelling of 'Impl' in member name 'Layer.RenderImpl(RenderArgs, Rectangle[], int, int)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Layer.cs" Line="534">In method 'Layer.RenderImpl(RenderArgs, Rectangle[], int, int)', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RenderUnchecked(PaintDotNet.RenderArgs,System.Drawing.Rectangle[],System.Int32,System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="roi" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="Layer.cs" Line="517">In method 'Layer.RenderUnchecked(RenderArgs, Rectangle[], int, int)', correct the spelling of 'roi' in parameter name 'roi' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Metadata" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AddExifValues(System.Drawing.Imaging.PropertyItem[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Exif" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="MetaData.cs" Line="249">Correct the spelling of 'Exif' in member name 'Metadata.AddExifValues(PropertyItem[])' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExifSectionName" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Exif" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Exif' in member name 'Metadata.ExifSectionName' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetExifValues(PaintDotNet.ExifTagID)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Exif" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="MetaData.cs" Line="138">Correct the spelling of 'Exif' in member name 'Metadata.GetExifValues(ExifTagID)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetExifValues(System.Int16)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Exif" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="MetaData.cs" Line="143">Correct the spelling of 'Exif' in member name 'Metadata.GetExifValues(short)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetKeys(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.StartsWith(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="MetaData.cs" Line="94">'Metadata.GetKeys(string)' makes a call to 'string.StartsWith(string)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.StartsWith(string, StringComparison)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetSections()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.IndexOf(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="MetaData.cs" Line="109">'Metadata.GetSections()' makes a call to 'string.IndexOf(string)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.IndexOf(string, StringComparison)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RemoveExifValues(PaintDotNet.ExifTagID)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Exif" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="MetaData.cs" Line="189">Correct the spelling of 'Exif' in member name 'Metadata.RemoveExifValues(ExifTagID)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#RemoveExifValues(System.Int16)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Exif" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="MetaData.cs" Line="194">Correct the spelling of 'Exif' in member name 'Metadata.RemoveExifValues(short)' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReplaceExifValues(PaintDotNet.ExifTagID,System.Drawing.Imaging.PropertyItem[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Exif" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="MetaData.cs" Line="174">Correct the spelling of 'Exif' in member name 'Metadata.ReplaceExifValues(ExifTagID, PropertyItem[])' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReplaceExifValues(System.Int16,System.Drawing.Imaging.PropertyItem[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Exif" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="MetaData.cs" Line="179">Correct the spelling of 'Exif' in member name 'Metadata.ReplaceExifValues(short, PropertyItem[])' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PdnFileType" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Pdn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pdn' in type name 'PdnFileType'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="PdnFileTypes" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Pdn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pdn' in type name 'PdnFileTypes'.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Pdn" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Pdn" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Pdn' in member name 'PdnFileTypes.Pdn' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Png" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Png" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Png' in member name 'PdnFileTypes.Png' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Tga" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Tga" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Tga' in member name 'PdnFileTypes.Tga' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PngFileType" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Png" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Png' in type name 'PngFileType'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="PngFileType+PngBitDepthUIChoices" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Png" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Png' in type name 'PngFileType.PngBitDepthUIChoices'.</Issue>
+          </Message>
+          <Message TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If the name 'PngFileType.PngBitDepthUIChoices' is plural, change it to its singular form.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Bpp24" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Bpp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Bpp' in member name 'PngFileType.PngBitDepthUIChoices.Bpp24' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Bpp32" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Bpp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Bpp' in member name 'PngFileType.PngBitDepthUIChoices.Bpp32' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Bpp8" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Bpp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Bpp' in member name 'PngFileType.PngBitDepthUIChoices.Bpp8' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PngFileType+PropertyNames" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If the name 'PngFileType.PropertyNames' is plural, change it to its singular form.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="PropertyBasedFileType" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateDefaultSaveConfigUI(PaintDotNet.PropertySystem.PropertyCollection)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="System.String.Compare(System.String,System.String,System.StringComparison)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="NonBreaking">
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="PropertyBasedFileType.cs" Line="42">'PropertyBasedFileType.CreateDefaultSaveConfigUI(PropertyCollection)' passes StringComparison.InvariantCulture as an argument to 'string.Compare(string, string, StringComparison)'. Replace this usage with StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase if appropriate.</Issue>
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="PropertyBasedFileType.cs" Line="46">'PropertyBasedFileType.CreateDefaultSaveConfigUI(PropertyCollection)' passes StringComparison.InvariantCulture as an argument to 'string.Compare(string, string, StringComparison)'. Replace this usage with StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBlendOps+AdditiveBlendOp" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ApplyStatic(PaintDotNet.ColorBgra,PaintDotNet.ColorBgra)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rhs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="UserBlendOps.Generated.cs" Line="581">In method 'UserBlendOps.AdditiveBlendOp.ApplyStatic(ColorBgra, ColorBgra)', correct the spelling of 'rhs' in parameter name 'rhs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBlendOps+ColorBurnBlendOp" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ApplyStatic(PaintDotNet.ColorBgra,PaintDotNet.ColorBgra)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rhs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="UserBlendOps.Generated.cs" Line="582">In method 'UserBlendOps.ColorBurnBlendOp.ApplyStatic(ColorBgra, ColorBgra)', correct the spelling of 'rhs' in parameter name 'rhs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBlendOps+ColorDodgeBlendOp" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ApplyStatic(PaintDotNet.ColorBgra,PaintDotNet.ColorBgra)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rhs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="UserBlendOps.Generated.cs" Line="583">In method 'UserBlendOps.ColorDodgeBlendOp.ApplyStatic(ColorBgra, ColorBgra)', correct the spelling of 'rhs' in parameter name 'rhs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBlendOps+DarkenBlendOp" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ApplyStatic(PaintDotNet.ColorBgra,PaintDotNet.ColorBgra)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rhs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="UserBlendOps.Generated.cs" Line="590">In method 'UserBlendOps.DarkenBlendOp.ApplyStatic(ColorBgra, ColorBgra)', correct the spelling of 'rhs' in parameter name 'rhs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBlendOps+DifferenceBlendOp" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ApplyStatic(PaintDotNet.ColorBgra,PaintDotNet.ColorBgra)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rhs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="UserBlendOps.Generated.cs" Line="587">In method 'UserBlendOps.DifferenceBlendOp.ApplyStatic(ColorBgra, ColorBgra)', correct the spelling of 'rhs' in parameter name 'rhs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBlendOps+GlowBlendOp" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ApplyStatic(PaintDotNet.ColorBgra,PaintDotNet.ColorBgra)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rhs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="UserBlendOps.Generated.cs" Line="585">In method 'UserBlendOps.GlowBlendOp.ApplyStatic(ColorBgra, ColorBgra)', correct the spelling of 'rhs' in parameter name 'rhs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBlendOps+LightenBlendOp" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ApplyStatic(PaintDotNet.ColorBgra,PaintDotNet.ColorBgra)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rhs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="UserBlendOps.Generated.cs" Line="589">In method 'UserBlendOps.LightenBlendOp.ApplyStatic(ColorBgra, ColorBgra)', correct the spelling of 'rhs' in parameter name 'rhs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBlendOps+MultiplyBlendOp" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ApplyStatic(PaintDotNet.ColorBgra,PaintDotNet.ColorBgra)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rhs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="UserBlendOps.Generated.cs" Line="580">In method 'UserBlendOps.MultiplyBlendOp.ApplyStatic(ColorBgra, ColorBgra)', correct the spelling of 'rhs' in parameter name 'rhs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBlendOps+NegationBlendOp" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ApplyStatic(PaintDotNet.ColorBgra,PaintDotNet.ColorBgra)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rhs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="UserBlendOps.Generated.cs" Line="588">In method 'UserBlendOps.NegationBlendOp.ApplyStatic(ColorBgra, ColorBgra)', correct the spelling of 'rhs' in parameter name 'rhs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBlendOps+NormalBlendOp" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ApplyStatic(PaintDotNet.ColorBgra,PaintDotNet.ColorBgra)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rhs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="UserBlendOps.Generated.cs" Line="579">In method 'UserBlendOps.NormalBlendOp.ApplyStatic(ColorBgra, ColorBgra)', correct the spelling of 'rhs' in parameter name 'rhs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBlendOps+OverlayBlendOp" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ApplyStatic(PaintDotNet.ColorBgra,PaintDotNet.ColorBgra)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rhs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="UserBlendOps.Generated.cs" Line="586">In method 'UserBlendOps.OverlayBlendOp.ApplyStatic(ColorBgra, ColorBgra)', correct the spelling of 'rhs' in parameter name 'rhs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBlendOps+ReflectBlendOp" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ApplyStatic(PaintDotNet.ColorBgra,PaintDotNet.ColorBgra)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rhs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="UserBlendOps.Generated.cs" Line="584">In method 'UserBlendOps.ReflectBlendOp.ApplyStatic(ColorBgra, ColorBgra)', correct the spelling of 'rhs' in parameter name 'rhs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBlendOps+ScreenBlendOp" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ApplyStatic(PaintDotNet.ColorBgra,PaintDotNet.ColorBgra)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rhs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="UserBlendOps.Generated.cs" Line="591">In method 'UserBlendOps.ScreenBlendOp.ApplyStatic(ColorBgra, ColorBgra)', correct the spelling of 'rhs' in parameter name 'rhs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="UserBlendOps+XorBlendOp" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ApplyStatic(PaintDotNet.ColorBgra,PaintDotNet.ColorBgra)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="rhs" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="MemberParameter" Certainty="75" Level="CriticalWarning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Data" File="UserBlendOps.Generated.cs" Line="592">In method 'UserBlendOps.XorBlendOp.ApplyStatic(ColorBgra, ColorBgra)', correct the spelling of 'rhs' in parameter name 'rhs' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="PaintDotNet.Data">
+       <Types>
+        <Type Name="TgaFileType" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Tga" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Tga' in type name 'TgaFileType'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="TgaFileType+PropertyNames" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If the name 'TgaFileType.PropertyNames' is plural, change it to its singular form.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#RleCompress" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Rle" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Rle' in member name 'TgaFileType.PropertyNames.RleCompress' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TgaFileType+TgaBitDepthUIChoices" Kind="Enum" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message Id="Tga" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Name="Type" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Tga' in type name 'TgaFileType.TgaBitDepthUIChoices'.</Issue>
+          </Message>
+          <Message TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+           <Issue Certainty="75" Level="Error">If the name 'TgaFileType.TgaBitDepthUIChoices' is plural, change it to its singular form.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#Bpp24" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Bpp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Bpp' in member name 'TgaFileType.TgaBitDepthUIChoices.Bpp24' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Bpp32" Kind="Field" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message Id="Bpp" TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704" Status="Active" Created="2014-10-09 06:23:00Z" FixCategory="Breaking">
+             <Issue Name="Member" Certainty="75" Level="CriticalWarning">Correct the spelling of 'Bpp' in member name 'TgaFileType.TgaBitDepthUIChoices.Bpp32' or remove it entirely if it represents any sort of Hungarian notation.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="CompoundWordsShouldBeCasedCorrectly" Category="Microsoft.Naming" CheckId="CA1702">
+   <Name>Compound words should be cased correctly</Name>
+   <Description>Avoid creating compound words from terms which exist in the dictionary as discrete terms. Do not create a compound word such as 'StopWatch' or 'PopUp'. These terms are recognized in the dictionary and should be cased as 'Stopwatch' and 'Popup'.</Description>
+   <Resolution Name="MemberShouldBeDiscreteTerm">The compound word '{0}' in member name {1} exists as a discrete term. If your usage is intended to be single word, case it as '{2}' or strip the first token entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb264474(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="80">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotRaiseExceptionsInUnexpectedLocations" Category="Microsoft.Design" CheckId="CA1065">
+   <Name>Do not raise exceptions in unexpected locations</Name>
+   <Description>Do not explicitly raise exceptions from unexpected locations. There are some methods, such as Equals and GetHashCode, which users do not expect to raise exceptions. Therefore calls to these methods are not commonly wrapped in try catch blocks.</Description>
+   <Resolution Name="PropertyGetter">{0} creates an exception of type {1}, an exception type that should not be raised in a property. If this exception instance might be raised, use a different exception type, convert this property into a method, or change this property's logic so that it no longer raises an exception.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb386039(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Error, Warning</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="ExceptionsShouldBePublic" Category="Microsoft.Design" CheckId="CA1064">
+   <Name>Exceptions should be public</Name>
+   <Description>Exception classes should either be public, or have a non-generic public ancestor.</Description>
+   <Resolution Name="Default">Make exception class {0} public.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb264484(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="IdentifiersShouldBeSpelledCorrectly" Category="Microsoft.Naming" CheckId="CA1704">
+   <Name>Identifiers should be spelled correctly</Name>
+   <Description>The individual words that make up an identifier should not be abbreviated and should be spelled correctly. If this rule generates a false positive on a term that should be recognized, add the word to the FxCop custom dictionary.</Description>
+   <Resolution Name="Member">Correct the spelling of '{0}' in member name {1} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="MemberParameter">In method {0}, correct the spelling of '{1}' in parameter name {2} or remove it entirely if it represents any sort of Hungarian notation.</Resolution>
+   <Resolution Name="MemberParameterMoreMeaningfulName">In method {0}, consider providing a more meaningful name than parameter name {1}.</Resolution>
+   <Resolution Name="Type">Correct the spelling of '{0}' in type name {1}.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb264492(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">CriticalWarning</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="OnlyFlagsEnumsShouldHavePluralNames" Category="Microsoft.Naming" CheckId="CA1717">
+   <Name>Only FlagsAttribute enums should have plural names</Name>
+   <Description>Plural names indicate that the values of the enumeration can be combined. For example, an enumeration named 'Day' indicates a single day, and an enumeration named 'Days' indicates multiple days. Enumeration values should be combined using the bit-wise OR operator only if the Flags attribute is present on the enumeration.</Description>
+   <Resolution Name="Default">If the name {0} is plural, change it to its singular form.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb264487(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="NamingRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307">
+   <Name>Specify StringComparison</Name>
+   <Description>If an overload exists that takes a StringComparison argument, it should always be called in favor of an overload that does not.</Description>
+   <Resolution Name="Default">{0} makes a call to {1} that does not explicitly provide a StringComparison. This should be replaced with a call to {2}.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb386080(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309">
+   <Name>Use ordinal StringComparison</Name>
+   <Description>For non-linguistic comparisons, StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase should be used instead of the linguistically-sensitive StringComparison.InvariantCulture.</Description>
+   <Resolution Name="StringComparison">{0} passes {1} as an argument to {2}. Replace this usage with StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb385972(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

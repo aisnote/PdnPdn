@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 9.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="1.36">
+ <Targets>
+  <Target Name="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\bin\Debug\PaintDotNet.exe">
+   <Modules>
+    <Module Name="paintdotnet.exe">
+     <Namespaces>
+      <Namespace Name="PaintDotNet">
+       <Types>
+        <Type Name="AboutDialog" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#RichCreditsBox_LinkClicked(System.Object,System.Windows.Forms.LinkClickedEventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.StartsWith(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="AboutDialog.cs" Line="167">'AboutDialog.RichCreditsBox_LinkClicked(object, LinkClickedEventArgs)' makes a call to 'string.StartsWith(string)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.StartsWith(string, StringComparison)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="AppWorkspace" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidExcessiveClassCoupling" Category="Microsoft.Maintainability" CheckId="CA1506" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="Breaking">
+           <Issue Name="UIType" Certainty="90" Level="Error">'AppWorkspace' is coupled with 115 different (non-IComponent) types from 15 different namespaces. Rewrite or refactor this class's methods to decrease its class coupling, or consider moving some of the class's methods to some of the other types it is tightly coupled with. A class coupling above 95 indicates poor maintainability, a class coupling between 95 and 80 indicates moderate maintainability, and a class coupling below 80 indicates good maintainability.</Issue>
+          </Message>
+         </Messages>
+         <Members>
+          <Member Name="#LoadDefaultToolType()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Compare(System.String,System.String,System.StringComparison)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="AppWorkspace.cs" Line="1229">'AppWorkspace.LoadDefaultToolType()' passes StringComparison.InvariantCultureIgnoreCase as an argument to 'string.Compare(string, string, StringComparison)'. Replace this usage with StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DocumentWorkspace" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidExcessiveClassCoupling" Category="Microsoft.Maintainability" CheckId="CA1506" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="Breaking">
+           <Issue Name="UIType" Certainty="90" Level="Error">'DocumentWorkspace' is coupled with 133 different (non-IComponent) types from 15 different namespaces. Rewrite or refactor this class's methods to decrease its class coupling, or consider moving some of the class's methods to some of the other types it is tightly coupled with. A class coupling above 95 indicates poor maintainability, a class coupling between 95 and 80 indicates moderate maintainability, and a class coupling below 80 indicates good maintainability.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="FileTypes" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#LoadFileTypes()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Reflection.Assembly.LoadFrom" TypeName="AvoidCallingProblematicMethods" Category="Microsoft.Reliability" CheckId="CA2001" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Name="System.Reflection.Assembly.LoadFrom" Certainty="75" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="FileTypes.cs" Line="124">Remove the call to Assembly.LoadFrom from 'FileTypes.LoadFileTypes()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="HistoryFunctionNonFatalException" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="ExceptionsShouldBePublic" Category="Microsoft.Design" CheckId="CA1064" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+           <Issue Certainty="95" Level="Warning">Make exception class 'HistoryFunctionNonFatalException' public.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="MainForm" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#.ctor(System.String[])" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Compare(System.String,System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="MainForm.cs" Line="290">'MainForm.MainForm(string[])' makes a call to 'string.Compare(string, string)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.Compare(string, string, StringComparison)'.</Issue>
+            </Message>
+            <Message Id="System.String.Compare(System.String,System.String,System.Boolean)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="MainForm.cs" Line="294">'MainForm.MainForm(string[])' makes a call to 'string.Compare(string, string, bool)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.Compare(string, string, StringComparison)'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="MainForm.cs" Line="298">'MainForm.MainForm(string[])' makes a call to 'string.Compare(string, string, bool)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.Compare(string, string, StringComparison)'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="MainForm.cs" Line="304">'MainForm.MainForm(string[])' makes a call to 'string.Compare(string, string, bool)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.Compare(string, string, StringComparison)'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="MainForm.cs" Line="310">'MainForm.MainForm(string[])' makes a call to 'string.Compare(string, string, bool)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.Compare(string, string, StringComparison)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SplitMessage(System.String,PaintDotNet.MainForm+ArgumentAction&amp;,System.String&amp;)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.IndexOf(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="MainForm.cs" Line="123">'MainForm.SplitMessage(string, out MainForm.ArgumentAction, out string)' makes a call to 'string.IndexOf(string)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.IndexOf(string, StringComparison)'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="MainForm.cs" Line="132">'MainForm.SplitMessage(string, out MainForm.ArgumentAction, out string)' makes a call to 'string.IndexOf(string)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.IndexOf(string, StringComparison)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MostRecentFiles" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Contains(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Compare(System.String,System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="MostRecentFiles.cs" Line="96">'MostRecentFiles.Contains(string)' makes a call to 'string.Compare(string, string)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.Compare(string, string, StringComparison)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Remove(System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Compare(System.String,System.String,System.Boolean)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="MostRecentFiles.cs" Line="139">'MostRecentFiles.Remove(string)' makes a call to 'string.Compare(string, string, bool)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.Compare(string, string, StringComparison)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PaletteCollection" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Contains(System.String,System.String&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Compare(System.String,System.String,System.StringComparison)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="PaletteCollection.cs" Line="541">'PaletteCollection.Contains(string, out string)' passes StringComparison.InvariantCultureIgnoreCase as an argument to 'string.Compare(string, string, StringComparison)'. Replace this usage with StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Startup" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#CurrentDomain_AssemblyResolve(System.Object,System.ResolveEventArgs)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.IndexOf(System.String,System.StringComparison)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="Startup.cs" Line="397">'Startup.CurrentDomain_AssemblyResolve(object, ResolveEventArgs)' passes StringComparison.InvariantCultureIgnoreCase as an argument to 'string.IndexOf(string, StringComparison)'. Replace this usage with StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Start()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Compare(System.String,System.String,System.StringComparison)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="Startup.cs" Line="252">'Startup.Start()' passes StringComparison.InvariantCultureIgnoreCase as an argument to 'string.Compare(string, string, StringComparison)'. Replace this usage with StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteCrashLog(System.Exception,System.IO.TextWriter)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidExcessiveClassCoupling" Category="Microsoft.Maintainability" CheckId="CA1506" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="Breaking">
+             <Issue Name="Method" Certainty="75" Level="Warning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="Startup.cs" Line="446">'Startup.WriteCrashLog(Exception, TextWriter)' is coupled with 32 different types from 11 different namespaces. Rewrite or refactor the method to decrease its class coupling, or consider moving the method to one of the other types it is tightly coupled with. A class coupling above 40 indicates poor maintainability, a class coupling between 40 and 30 indicates moderate maintainability, and a class coupling below 30 indicates good maintainability.</Issue>
+            </Message>
+            <Message TypeName="AvoidUnmaintainableCode" Category="Microsoft.Maintainability" CheckId="CA1505" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Name="Method" Certainty="75" Level="Warning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src" File="Startup.cs" Line="446">'Startup.WriteCrashLog(Exception, TextWriter)' has a maintainability index of 20. Rewrite or refactor the method to increase its maintainability index (MI). An MI below 10 indicates poor maintainability, an MI between 10 and 20 indicates moderate maintainability, and an MI above 20 indicates good maintainability.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="ToolConfigStrip" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Messages>
+          <Message TypeName="AvoidExcessiveClassCoupling" Category="Microsoft.Maintainability" CheckId="CA1506" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="Breaking">
+           <Issue Name="UIType" Certainty="75" Level="Warning">'ToolConfigStrip' is coupled with 87 different (non-IComponent) types from 11 different namespaces. Rewrite or refactor this class's methods to decrease its class coupling, or consider moving some of the class's methods to some of the other types it is tightly coupled with. A class coupling above 95 indicates poor maintainability, a class coupling between 95 and 80 indicates moderate maintainability, and a class coupling below 80 indicates good maintainability.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="PaintDotNet.Actions">
+       <Types>
+        <Type Name="PasteAction" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#PerformAction()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="AvoidExcessiveClassCoupling" Category="Microsoft.Maintainability" CheckId="CA1506" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="Breaking">
+             <Issue Name="Method" Certainty="75" Level="Warning" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Actions" File="PasteAction.cs" Line="42">'PasteAction.PerformAction()' is coupled with 35 different types from 10 different namespaces. Rewrite or refactor the method to decrease its class coupling, or consider moving the method to one of the other types it is tightly coupled with. A class coupling above 40 indicates poor maintainability, a class coupling between 40 and 30 indicates moderate maintainability, and a class coupling below 30 indicates good maintainability.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="PaintDotNet.Menus">
+       <Types>
+        <Type Name="EffectMenuBase" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#AddEffectsToMenu()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Compare(System.String,System.String,System.Boolean)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Menus" File="EffectMenuBase.cs" Line="397">'EffectMenuBase.AddEffectsToMenu()' makes a call to 'string.Compare(string, string, bool)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.Compare(string, string, StringComparison)'.</Issue>
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Menus" File="EffectMenuBase.cs" Line="413">'EffectMenuBase.AddEffectsToMenu()' makes a call to 'string.Compare(string, string, bool)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.Compare(string, string, StringComparison)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GatherEffects()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.Reflection.Assembly.LoadFrom" TypeName="AvoidCallingProblematicMethods" Category="Microsoft.Reliability" CheckId="CA2001" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Name="System.Reflection.Assembly.LoadFrom" Certainty="75" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Menus" File="EffectMenuBase.cs" Line="469">Remove the call to Assembly.LoadFrom from 'EffectMenuBase.GatherEffects()'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="FileMenu" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#MenuFileOpenRecentFile_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.IndexOf(System.String)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Menus" File="FileMenu.cs" Line="487">'FileMenu.MenuFileOpenRecentFile_Click(object, EventArgs)' makes a call to 'string.IndexOf(string)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.IndexOf(string, StringComparison)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="HelpMenu" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#MenuHelpLanguage_DropDownOpening(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Compare(System.String,System.String,System.StringComparison)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Menus" File="HelpMenu.cs" Line="283">'HelpMenu.MenuHelpLanguage_DropDownOpening(object, EventArgs)' passes StringComparison.InvariantCultureIgnoreCase as an argument to 'string.Compare(string, string, StringComparison)'. Replace this usage with StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase if appropriate.</Issue>
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Menus" File="HelpMenu.cs" Line="293">'HelpMenu.MenuHelpLanguage_DropDownOpening(object, EventArgs)' passes StringComparison.InvariantCultureIgnoreCase as an argument to 'string.Compare(string, string, StringComparison)'. Replace this usage with StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="PaintDotNet.Updates">
+       <Types>
+        <Type Name="ExtractingState" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#OnEnteredStateImpl()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Compare(System.String,System.String,System.Boolean,System.Globalization.CultureInfo)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Updates" File="ExtractingState.cs" Line="94">'ExtractingState.OnEnteredStateImpl()' passes CultureInfo.InvariantCulture as an argument to 'string.Compare(string, string, bool, CultureInfo)'. Replace this usage with StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="InstallingState" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#Finish(PaintDotNet.AppWorkspace)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Compare(System.String,System.String,System.Boolean)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Updates" File="InstallingState.cs" Line="87">'InstallingState.Finish(AppWorkspace)' makes a call to 'string.Compare(string, string, bool)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.Compare(string, string, StringComparison)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OnEnteredStateImpl()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Compare(System.String,System.String,System.Boolean)" TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Updates" File="InstallingState.cs" Line="46">'InstallingState.OnEnteredStateImpl()' makes a call to 'string.Compare(string, string, bool)' that does not explicitly provide a StringComparison. This should be replaced with a call to 'string.Compare(string, string, StringComparison)'.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StartupState" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
+         <Members>
+          <Member Name="#DeleteUpdateMsi()" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message Id="System.String.Compare(System.String,System.String,System.Boolean,System.Globalization.CultureInfo)" TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309" Status="Active" Created="2014-10-30 09:39:19Z" FixCategory="NonBreaking">
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Updates" File="StartupState.cs" Line="87">'StartupState.DeleteUpdateMsi()' passes CultureInfo.InvariantCulture as an argument to 'string.Compare(string, string, bool, CultureInfo)'. Replace this usage with StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase if appropriate.</Issue>
+             <Issue Name="StringComparison" Certainty="75" Level="Error" Path="E:\my_project\OpenPDN\openpdn-e28f1ff0077e\src\Updates" File="StartupState.cs" Line="87">'StartupState.DeleteUpdateMsi()' passes CultureInfo.InvariantCulture as an argument to 'string.Compare(string, string, bool, CultureInfo)'. Replace this usage with StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase if appropriate.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="AvoidCallingProblematicMethods" Category="Microsoft.Reliability" CheckId="CA2001">
+   <Name>Avoid calling problematic methods</Name>
+   <Description>Avoid making unnecessary and potentially dangerous method calls.</Description>
+   <Resolution Name="System.Reflection.Assembly.LoadFrom">Remove the call to Assembly.LoadFrom from {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb385973(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="ReliabilityRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidExcessiveClassCoupling" Category="Microsoft.Maintainability" CheckId="CA1506">
+   <Name>Avoid excessive class coupling</Name>
+   <Description>Types and methods with a high degree of class coupling can be difficult to maintain.</Description>
+   <Resolution Name="Method">{0} is coupled with {1} different types from {2} different namespaces. Rewrite or refactor the method to decrease its class coupling, or consider moving the method to one of the other types it is tightly coupled with. A class coupling above {3} indicates poor maintainability, a class coupling between {3} and {4} indicates moderate maintainability, and a class coupling below {4} indicates good maintainability.</Resolution>
+   <Resolution Name="UIType">{0} is coupled with {1} different (non-IComponent) types from {2} different namespaces. Rewrite or refactor this class's methods to decrease its class coupling, or consider moving some of the class's methods to some of the other types it is tightly coupled with. A class coupling above {3} indicates poor maintainability, a class coupling between {3} and {4} indicates moderate maintainability, and a class coupling below {4} indicates good maintainability.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb397994(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="MaintainabilityRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="AvoidUnmaintainableCode" Category="Microsoft.Maintainability" CheckId="CA1505">
+   <Name>Avoid unmaintainable code</Name>
+   <Description>Types and methods with a high degree of class coupling, cyclomatic complexity and/or program length can be difficult to maintain.</Description>
+   <Resolution Name="Method">{0} has a maintainability index of {1}. Rewrite or refactor the method to increase its maintainability index (MI). An MI below {2} indicates poor maintainability, an MI between {2} and {3} indicates moderate maintainability, and an MI above {3} indicates good maintainability.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb386043(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="90">Warning</MessageLevel>
+   <File Name="MaintainabilityRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="ExceptionsShouldBePublic" Category="Microsoft.Design" CheckId="CA1064">
+   <Name>Exceptions should be public</Name>
+   <Description>Exception classes should either be public, or have a non-generic public ancestor.</Description>
+   <Resolution Name="Default">Make exception class {0} public.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb264484(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Warning</MessageLevel>
+   <File Name="DesignRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyStringComparison" Category="Microsoft.Globalization" CheckId="CA1307">
+   <Name>Specify StringComparison</Name>
+   <Description>If an overload exists that takes a StringComparison argument, it should always be called in favor of an overload that does not.</Description>
+   <Resolution Name="Default">{0} makes a call to {1} that does not explicitly provide a StringComparison. This should be replaced with a call to {2}.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb386080(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+  <Rule TypeName="UseOrdinalStringComparison" Category="Microsoft.Globalization" CheckId="CA1309">
+   <Name>Use ordinal StringComparison</Name>
+   <Description>For non-linguistic comparisons, StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase should be used instead of the linguistically-sensitive StringComparison.InvariantCulture.</Description>
+   <Resolution Name="StringComparison">{0} passes {1} as an argument to {2}. Replace this usage with StringComparison.Ordinal or StringComparison.OrdinalIgnoreCase if appropriate.</Resolution>
+   <Owner />
+   <Url>http://msdn2.microsoft.com/library/bb385972(VS.90).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="GlobalizationRules.dll" Version="9.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
